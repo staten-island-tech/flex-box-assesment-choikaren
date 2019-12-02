@@ -1,0 +1,41 @@
+/* @import "./_header.scss";
+
+$colors: (
+   primary: #345123
+);
+
+@function color ($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$padding:1.3rem;
+body {
+    background-color: rgba(color(primary), 0.4);
+}
+ */
+.flex-parent {
+    background-color: red;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    height: 60vh;
+}
+
+.flex-child {
+    background-color: blue;
+    color: white;
+    margin: 10px;
+}
+
+#flex-grow-1 {
+    flex-grow: 1;
+}
+
+#flex-grow-2 {
+display: flex;
+flex-direction: row;
+}
+
+.flex-sm {
+    background-color: cadetblue;
+}

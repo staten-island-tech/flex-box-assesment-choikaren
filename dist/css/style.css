@@ -1,0 +1,339 @@
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-mainblue: rgb(7, 0, 99);
+  --color-mainpink: rgb(255, 97, 145);
+  --color-mainyellow: rgb(255, 230, 0);
+  --font-mainfont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Top {
+  margin-top: 1.5rem;
+}
+
+.buttons {
+  text-align: center;
+  background-color: var(--color-mainpink);
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-mainfont);
+  cursor: pointer;
+  color: var(--color-mainblue);
+  transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  background: var(--color-mainyellow);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-mainyellow);
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  color: var(--color-mainblue);
+  font-family: var(--font-mainfont);
+}
+
+.popup h2 {
+  margin-top: 0;
+  background: var(--color-mainyellow);
+  font-family: var(--font-mainfont);
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  transition: all 0.2s;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.close:hover {
+  transform: scale(1.5);
+}
+
+.header1 {
+  height: 20vh;
+  background-color: var(--color-mainyellow);
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.header1-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-mainfont);
+  text-align: center;
+  color: var(--color-mainblue);
+}
+
+#flower {
+  width: 13rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+#title {
+  letter-spacing: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.header2 {
+  position: relative;
+  z-index: -2;
+  margin-top: 1.5rem;
+  height: 20rem;
+}
+
+.slideshowtext {
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  top: 15%;
+  color: var(--color-mainyellow);
+  font-family: var(--font-mainfont);
+}
+
+.welcome {
+  margin-right: 2rem;
+  font-size: 4rem;
+}
+
+.period7 {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.slideshow {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.slideshow img {
+  position: absolute;
+  animation: slideshow 30s infinite;
+  opacity: 0;
+  width: 100%;
+}
+
+@keyframes slideshow {
+  15% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+
+.slideshow img:nth-child(1) {
+  animation-delay: 0s;
+}
+.slideshow img:nth-child(2) {
+  animation-delay: 5s;
+}
+.slideshow img:nth-child(3) {
+  animation-delay: 10s;
+}
+.slideshow img:nth-child(4) {
+  animation-delay: 15s;
+}
+.slideshow img:nth-child(5) {
+  animation-delay: 20s;
+}
+.slideshow img:nth-child(6) {
+  animation-delay: 25s;
+}
+
+.header3 {
+  height: 185rem;
+  background-color: var(--color-mainpink);
+  position: relative;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.textinrow {
+  position: relative;
+  margin: 3rem;
+  font-family: var(--font-mainfont);
+}
+.place {
+  font-size: 2.5rem;
+  color: var(--color-mainblue);
+}
+
+.description {
+  font-size: 1.5rem;
+  color: var(--color-mainyellow);
+  margin-bottom: 2rem;
+}
+
+.image {
+  position: relative;
+  width: 90%;
+  object-fit: cover;
+}
+
+@media (min-width: 400px) {
+  #title {
+    font-size: 3rem;
+    letter-spacing: 3rem;
+  }
+  .top {
+    margin-top: 2rem;
+  }
+  .header1 {
+    margin-top: 2rem;
+  }
+  .header2 {
+    height: 30vh;
+    margin-top: 2rem;
+  }
+  .welcome {
+    font-size: 5rem;
+    margin-right: 6rem;
+  }
+  .period7 {
+    font-size: 2rem;
+    margin-right: 6rem;
+  }
+  .header3 {
+    margin-top: 2rem;
+    height: 175rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .popup .close {
+    top: 15px;
+    right: 20px;
+  }
+  .btn {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+  }
+  .top {
+    margin-top: 3rem;
+  }
+  .header1 {
+    margin-top: 3rem;
+  }
+  .header2 {
+    height: 65vh;
+    margin-top: 3rem;
+  }
+  .welcome {
+    font-size: 7rem;
+    margin-right: 10rem;
+  }
+  .period7 {
+    font-size: 3rem;
+    margin-right: 10rem;
+  }
+  .header3 {
+    margin-top: 3rem;
+    height: 100rem;
+  }
+  .pictures {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+  }
+  .imagerow {
+    display: flex;
+    flex-direction: row;
+  }
+  .textinrow {
+    text-align: left;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header1 {
+    height: 45vh;
+  }
+  #flower {
+    width: 30rem;
+  }
+  #title {
+    font-size: 5rem;
+    letter-spacing: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .header2 {
+    height: 100vh;
+  }
+  .welcome {
+    font-size: 12rem;
+    margin-right: 13rem;
+  }
+  .period7 {
+    font-size: 6rem;
+    margin-right: 13rem;
+  }
+  .place {
+    font-size: 4rem;
+  }
+
+  .description {
+    font-size: 2.5rem;
+  }
+
+  .header3 {
+    height: 150rem;
+  }
+}
