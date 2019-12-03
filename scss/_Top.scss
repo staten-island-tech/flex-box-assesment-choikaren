@@ -1,0 +1,100 @@
+// .Top {
+//   margin-top: 1.5rem;
+// }
+
+.buttons {
+  text-align: center;
+  background-color: var(--color-mainpink);
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-mainfont);
+  cursor: pointer;
+  color: var(--color-mainblue);
+  transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  background: var(--color-mainyellow);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-mainyellow);
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  color: var(--color-mainblue);
+  font-family: var(--font-mainfont);
+}
+
+.popup h2 {
+  margin-top: 0;
+  background: var(--color-mainyellow);
+  font-family: var(--font-mainfont);
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  transition: all 0.2s;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.close:hover {
+  transform: scale(1.5);
+}
+
+@media (min-width: 400px) {
+  #title {
+    font-size: 3rem;
+    letter-spacing: 3rem;
+  }
+  // .top {
+  //   margin-top: 2rem;
+  // }
+}
+
+@media (min-width: 700px) {
+  .popup .close {
+    top: 15px;
+    right: 20px;
+  }
+  .btn {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+  }
+  // .top {
+  //   margin-top: 3rem;
+  // }
+}
