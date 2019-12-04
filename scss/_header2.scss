@@ -9,20 +9,26 @@
   position: absolute;
   width: 100%;
   text-align: right;
-  top: 15%;
+  top: 10%;
   color: var(--color-mainyellow);
   font-family: var(--font-mainfont);
 }
 
 .welcome {
-  margin-right: 2rem;
+  margin-right: 15%;
   font-size: 4rem;
+  text-shadow:
+  -4px 0px 0 var(--color-mainblue),
+
 }
 
 .period7 {
-  margin-right: 2rem;
+  margin-right: 15%;
   font-size: 1.5rem;
   font-style: italic;
+  color: var(--color-secondaryyellow);
+  text-shadow:
+  -2px 0px 0 var(--color-mainblue),
 }
 
 .slideshow {
@@ -78,6 +84,12 @@
   .period7 {
     font-size: 2rem;
     margin-right: 6rem;
+  }
+}
+
+@media (min-width:550px) {
+  .header2 {
+    height: 50vh;
   }
 }
 

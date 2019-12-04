@@ -8,10 +8,93 @@ html {
 
 :root {
   --color-mainblue: rgb(7, 0, 99);
-  --color-mainpink: rgb(255, 97, 145);
+  --color-secondaryblue: rgb(0, 42, 158);
+  --color-mainpink: rgb(255, 0, 76);
   --color-mainyellow: rgb(255, 230, 0);
+  --color-secondaryyellow: rgb(255, 196, 0);
+  --color-thirdyellow: rgb(255, 166, 0);
   --font-mainfont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.banner {
+  visibility: hidden;
+  position: absolute;
+}
+
+.menu {
+  background-color: var(--color-thirdyellow);
+  font-weight: bold;
+  font-family: var(--font-mainfont);
+  cursor: pointer;
+  color: var(--color-mainblue);
+  position: fixed;
+  right: 4%;
+  width: 25%;
+  text-align: center;
+  z-index: 5;
+}
+
+#newButtons {
+  background-color: var(--color-secondaryyellow);
+  right: 4%;
+  width: 25%;
+  text-align: center;
+  top: 4rem;
+  position: fixed;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.verticalButtons {
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  font-weight: bold;
+  font-family: var(--font-mainfont);
+  cursor: pointer;
+  color: var(--color-mainblue);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  font-size: 1rem;
+  padding: .5rem;
+  font-style: italic;
+}
+
+.verticalButtons:hover {
+  background-color: var(--color-mainyellow);
+}
+
+.menuBtn {
+  border: none;
+  background-color: inherit;
+  font-weight: bold;
+  font-family: var(--font-mainfont);
+  cursor: pointer;
+  color: var(--color-mainblue);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  font-size: .8rem;
+}
+
+.overlay1 {
+  visibility: hidden;
+}
+
+.overlay1:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup1 {
+  top: 50%;
+  left: 50%;
 }
 
 .buttons {
@@ -35,7 +118,8 @@ html {
 .btn:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  background: var(--color-mainyellow);
+  background: var(--color-secondaryyellow);
+  z-index: 3;
 }
 
 .overlay {
@@ -96,10 +180,23 @@ html {
           transform: scale(1.5);
 }
 
+.link {
+  text-decoration: none;
+}
+
 @media (min-width: 400px) {
-  #title {
-    font-size: 3rem;
-    letter-spacing: 3rem;
+  .banner {
+    visibility: visible;
+    position: relative;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  #newButtons {
+    visibility: hidden;
+  }
+  .verticalButtons {
+    visibility: hidden;
   }
 }
 
@@ -115,7 +212,8 @@ html {
 }
 
 .header1 {
-  height: 20vh;
+  z-index: -2;
+  height: 25vh;
   background-color: var(--color-mainyellow);
   position: relative;
 }
@@ -151,6 +249,13 @@ h2 {
   font-size: 1.5rem;
 }
 
+@media (min-width: 400px) {
+  #title {
+    font-size: 3rem;
+    letter-spacing: 3rem;
+  }
+}
+
 @media (min-width: 1000px) {
   .header1 {
     height: 45vh;
@@ -177,20 +282,23 @@ h2 {
   position: absolute;
   width: 100%;
   text-align: right;
-  top: 15%;
+  top: 10%;
   color: var(--color-mainyellow);
   font-family: var(--font-mainfont);
 }
 
 .welcome {
-  margin-right: 2rem;
+  margin-right: 15%;
   font-size: 4rem;
+  text-shadow: -4px 0px 0 var(--color-mainblue);
 }
 
 .period7 {
-  margin-right: 2rem;
+  margin-right: 15%;
   font-size: 1.5rem;
   font-style: italic;
+  color: var(--color-secondaryyellow);
+  text-shadow: -2px 0px 0 var(--color-mainblue);
 }
 
 .slideshow {
@@ -270,6 +378,12 @@ h2 {
   }
 }
 
+@media (min-width: 550px) {
+  .header2 {
+    height: 50vh;
+  }
+}
+
 @media (min-width: 700px) {
   .header2 {
     height: 65vh;
@@ -310,6 +424,7 @@ h2 {
   position: relative;
   text-align: center;
   padding: 3rem;
+  z-index: -2;
 }
 
 .textinrow {

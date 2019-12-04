@@ -1,6 +1,77 @@
-// .Top {
-//   margin-top: 1.5rem;
-// }
+.banner {
+  visibility: hidden;
+  position: absolute;
+  // margin-top: 1.5rem;
+}
+
+.menu {
+  background-color: var(--color-thirdyellow);
+  font-weight: bold;
+  font-family: var(--font-mainfont);
+  cursor: pointer;
+  color: var(--color-mainblue);
+  position: fixed;
+  right: 4%;
+  width: 25%;
+  text-align: center;
+  z-index: 5;
+}
+
+#newButtons {
+  background-color: var(--color-secondaryyellow);
+  right: 4%;
+  width: 25%;
+  text-align: center;
+  top: 4rem;
+  position: fixed;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.verticalButtons {
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  font-weight: bold;
+  font-family: var(--font-mainfont);
+  cursor: pointer;
+  color: var(--color-mainblue);
+  transition: all 0.3s ease-out;
+  font-size: 1rem;
+  padding: .5rem;
+  font-style: italic;
+}
+
+.verticalButtons:hover {
+  background-color: var(--color-mainyellow);
+}
+
+.menuBtn {
+  border: none;
+  background-color: inherit;
+  font-weight: bold;
+  font-family: var(--font-mainfont);
+  cursor: pointer;
+  color: var(--color-mainblue);
+  transition: all 0.3s ease-out;
+  font-size: .8rem;
+}
+
+.overlay1 {
+  visibility: hidden;
+
+}
+
+.overlay1:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup1 {
+  top: 50%;
+  left: 50%;
+}
 
 .buttons {
   text-align: center;
@@ -21,7 +92,10 @@
 
 .btn:hover {
   transform: scale(1.2);
-  background: var(--color-mainyellow);
+  background: var(--color-secondaryyellow);
+  z-index: 3;
+  // border-style: solid;
+  // border-width: .5rem;
 }
 
 .overlay {
@@ -75,11 +149,27 @@
   transform: scale(1.5);
 }
 
+.link {
+  text-decoration: none;
+}
+
 @media (min-width: 400px) {
-  #title {
-    font-size: 3rem;
-    letter-spacing: 3rem;
+  .banner {
+    visibility: visible;
+    position: relative;
   }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  #newButtons {
+    visibility: hidden;
+  }
+  .verticalButtons {
+    visibility: hidden;
+  }
+
   // .top {
   //   margin-top: 2rem;
   // }

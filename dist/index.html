@@ -9,18 +9,47 @@
   </head>
   <body>
     <section class="Top">
-      <div class="buttons">
-        <a
-          href="https://www.google.com/search?q=crocs&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj7rPOi5PzlAhWqrFkKHVyhAvoQ_AUoA3oECBkQBQ&biw=766&bih=749&dpr=2.5"
-        >
-          <button class="btn">Success</button>
+      <div class="menu">
+        <a class="link" href="#newButtons">
+          <button class="menuBtn"><h1>Menu</h1></button>
         </a>
-        <button class="btn" onclick="alert('NOOB')">YOU</button>
-        <a href="#popup1"> <button class="btn">DUN</button> </a>
-        <a href="#popup2">
-          <button class="btn">GOOFED</button>
-        </a>
-        <button class="btn">!</button>
+      </div>
+      <div id="newButtons" class="overlay1">
+        <div>
+        <a class="link" href="https://www.google.com/search?q=crocs&client=firefox-b-1-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiH5oPbvZrmAhWil-AKHSP6CKMQ_AUoA3oECBEQBQ&biw=473&bih=937&dpr=2">
+            <button  class="verticalButtons" >SUCCESS</button>
+          </a>
+        </div>
+        <div ><button class="verticalButtons" onclick="alert('NOOB')">YOU</button></div>
+        <div >
+          <a class="link" href="#popup1">
+            <button class="verticalButtons" >DUN</button>
+          </a>
+        </div>
+        <div>
+          <a class="link" href="#popup2">
+            <button  class="verticalButtons" >GOOFED</button>
+          </a>
+        </div>
+        <div ><a href="#"><button class="verticalButtons" >!</button></a></div>
+      </div>
+      <div class="banner">
+        <div class="buttons">
+          <a
+            class="link"
+            href="https://www.google.com/search?q=crocs&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj7rPOi5PzlAhWqrFkKHVyhAvoQ_AUoA3oECBkQBQ&biw=766&bih=749&dpr=2.5"
+          >
+            <button class="btn">Success</button>
+          </a>
+          <button class="btn" onclick="alert('NOOB')">YOU</button>
+          <a class="link" href="#popup1">
+            <button class="btn">DUN</button>
+          </a>
+          <a class="link" href="#popup2">
+            <button class="btn">GOOFED</button>
+          </a>
+          <button class="btn">!</button>
+        </div>
       </div>
       <div id="popup1" class="overlay">
         <div class="popup">
@@ -41,6 +70,7 @@
         </div>
       </div>
     </section>
+
     <section class="header1">
       <div class="header1-text">
         <h1 id="title">mighty morning</h1>
