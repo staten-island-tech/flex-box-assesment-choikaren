@@ -5,7 +5,7 @@
 }
 
 .menu {
-  background-color: var(--color-thirdyellow);
+  background-color: var(--color-mainpink);
   font-weight: bold;
   font-family: var(--font-mainfont);
   cursor: pointer;
@@ -27,6 +27,7 @@
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease-out;
 }
 
 .verticalButtons {

@@ -23,7 +23,7 @@ html {
 }
 
 .menu {
-  background-color: var(--color-thirdyellow);
+  background-color: var(--color-mainpink);
   font-weight: bold;
   font-family: var(--font-mainfont);
   cursor: pointer;
@@ -50,6 +50,8 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .verticalButtons {
@@ -419,7 +421,6 @@ h2 {
 }
 
 .header3 {
-  height: 185rem;
   background-color: var(--color-mainpink);
   position: relative;
   text-align: center;
@@ -451,16 +452,7 @@ h2 {
      object-fit: cover;
 }
 
-@media (min-width: 400px) {
-  .header3 {
-    height: 175rem;
-  }
-}
-
 @media (min-width: 700px) {
-  .header3 {
-    height: 100rem;
-  }
   .pictures {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -484,12 +476,6 @@ h2 {
     text-align: left;
     margin-left: 3rem;
     margin-right: 3rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  .header3 {
-    height: 150rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
