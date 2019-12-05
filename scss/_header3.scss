@@ -1,5 +1,7 @@
+@import "./_variables.scss";
+
 .header3 {
-  background-color: var(--color-mainpink);
+  background-color: $mainPink;
   position: relative;
   // margin-top: 1.5rem;
   text-align: center;
@@ -9,17 +11,17 @@
 
 .textinrow {
   position: relative;
-  margin: 3rem;
-  font-family: var(--font-mainfont);
+  margin: 2rem;
+  font-family: $mainFont;
 }
 .place {
-  font-size: 2.5rem;
-  color: var(--color-mainblue);
+  font-size: 2.25rem;
+  color: $mainBlue;
 }
 
 .description {
   font-size: 1.5rem;
-  color: var(--color-mainyellow);
+  color: $mainYellow;
   margin-bottom: 2rem;
 }
 
@@ -61,4 +63,8 @@
   // .header3 {
   //   height: 150rem;
   // }
+  .description {
+    font-size: rem;
+  }
+
 }

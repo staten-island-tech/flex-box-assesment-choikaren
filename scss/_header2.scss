@@ -1,3 +1,5 @@
+@import "./_variables.scss";
+
 .header2 {
   position: relative;
   z-index: -2;
@@ -10,25 +12,24 @@
   width: 100%;
   text-align: right;
   top: 10%;
-  color: var(--color-mainyellow);
-  font-family: var(--font-mainfont);
+  color: $mainYellow;
+  font-family: $mainFont;
 }
 
 .welcome {
   margin-right: 15%;
   font-size: 4rem;
   text-shadow:
-  -4px 0px 0 var(--color-mainblue),
-
+  -3px 0px 0 $mainBlue,
 }
 
 .period7 {
   margin-right: 15%;
   font-size: 1.5rem;
   font-style: italic;
-  color: var(--color-secondaryyellow);
+  color: $secondaryYellow;
   text-shadow:
-  -2px 0px 0 var(--color-mainblue),
+  -2px 0px 0 $mainBlue,
 }
 
 .slideshow {
@@ -74,7 +75,7 @@
 
 @media (min-width: 400px) {
   .header2 {
-    height: 25vh;
+    height: 35vh;
     // margin-top: 2rem;
   }
   .welcome {
@@ -84,18 +85,20 @@
   .period7 {
     font-size: 2rem;
     margin-right: 6rem;
+    text-shadow:
+    -2px 0px 0 $mainBlue,
   }
 }
 
 @media (min-width:550px) {
   .header2 {
-    height: 40vh;
+    height: 50vh;
   }
 }
 
 @media (min-width: 700px) {
   .header2 {
-    height: 60vh;
+    height: 65vh;
     // margin-top: 3rem;
   }
   .welcome {
@@ -110,7 +113,7 @@
 
 @media (min-width: 1000px) {
   .header2 {
-    height: 70vh;
+    height: 100vh;
   }
   .welcome {
     font-size: 12rem;

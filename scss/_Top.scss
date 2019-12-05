@@ -1,3 +1,5 @@
+@import "./_variables.scss";
+
 .banner {
   visibility: hidden;
   position: absolute;
@@ -5,11 +7,11 @@
 }
 
 .menu {
-  background-color: var(--color-mainpink);
+  background-color: $mainPink;
   font-weight: bold;
-  font-family: var(--font-mainfont);
+  font-family: $mainFont;
   cursor: pointer;
-  color: var(--color-mainblue);
+  color: $mainBlue;
   position: fixed;
   right: 4%;
   width: 25%;
@@ -18,7 +20,7 @@
 }
 
 #newButtons {
-  background-color: var(--color-secondaryyellow);
+  background-color: $secondaryYellow;
   right: 4%;
   width: 25%;
   text-align: center;
@@ -35,9 +37,9 @@
   background-color: inherit;
   border: none;
   font-weight: bold;
-  font-family: var(--font-mainfont);
+  font-family: $mainFont;
   cursor: pointer;
-  color: var(--color-mainblue);
+  color: $mainBlue;
   transition: all 0.3s ease-out;
   font-size: 1rem;
   padding: .5rem;
@@ -45,16 +47,16 @@
 }
 
 .verticalButtons:hover {
-  background-color: var(--color-mainyellow);
+  background-color: $mainYellow;
 }
 
 .menuBtn {
   border: none;
   background-color: inherit;
   font-weight: bold;
-  font-family: var(--font-mainfont);
+  font-family: $mainFont;
   cursor: pointer;
-  color: var(--color-mainblue);
+  color: $mainBlue;
   transition: all 0.3s ease-out;
   font-size: .8rem;
 }
@@ -76,7 +78,7 @@
 
 .buttons {
   text-align: center;
-  background-color: var(--color-mainpink);
+  background-color: $mainPink;
 }
 
 .btn {
@@ -85,15 +87,15 @@
   padding: 1rem 1rem;
   font-size: 1rem;
   font-weight: bold;
-  font-family: var(--font-mainfont);
+  font-family: $mainFont;
   cursor: pointer;
-  color: var(--color-mainblue);
+  color: $mainBlue;
   transition: all 0.3s ease-out;
 }
 
 .btn:hover {
   transform: scale(1.2);
-  background: var(--color-secondaryyellow);
+  background: $secondaryYellow;
   z-index: 3;
   // border-style: solid;
   // border-width: .5rem;
@@ -122,18 +124,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: var(--color-mainyellow);
+  background: $mainYellow;
   width: 30%;
   position: relative;
   transition: all 5s ease-in-out;
-  color: var(--color-mainblue);
-  font-family: var(--font-mainfont);
+  color: $mainBlue;
+  font-family: $mainFont;
 }
 
 .popup h2 {
   margin-top: 0;
-  background: var(--color-mainyellow);
-  font-family: var(--font-mainfont);
+  background: $mainYellow;
+  font-family: $mainFont;
 }
 .popup .close {
   position: absolute;
