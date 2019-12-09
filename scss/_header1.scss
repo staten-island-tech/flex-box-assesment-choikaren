@@ -17,6 +17,9 @@ z-index: -2;
   font-family: $mainFont;
   text-align: center;
   color: $mainBlue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #flower {
@@ -57,7 +60,7 @@ h2 {
 }
 @media (min-width: 1000px) {
   .header1 {
-    height: 45vh;
+    height: 53vh;
   }
   #flower {
     width: 30rem;
