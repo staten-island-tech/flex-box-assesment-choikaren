@@ -465,6 +465,9 @@ h2 {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .image {
+    width: 40%;
+  }
   .textinrow {
     text-align: left;
     margin-left: 3rem;
@@ -475,6 +478,9 @@ h2 {
 @media (min-width: 1000px) {
   .description {
     font-size: rem;
+  }
+  .image {
+    width: 70%;
   }
 }
 
