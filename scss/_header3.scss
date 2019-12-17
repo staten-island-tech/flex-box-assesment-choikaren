@@ -3,6 +3,7 @@
 .header3 {
   position: relative;
   background-color: $mainBlue;
+  z-index: -2;
 }
 
 .entireBlock {
@@ -22,12 +23,15 @@
   z-index: 5;
 }
 
+.photoGrid:hover .imageBlock:not(:hover) {
+  transform: scale(.9);
+}
+
 .photoGridText {
   z-index: 3;
   position: absolute;
   font-family: $mainFont;
   color: $secondaryYellow;
-  text-shadow: -3px 0px 0 $mainBlue;
   font-weight: bold;
   margin: 5%;
 }
@@ -54,6 +58,7 @@
   width: 100%;
   filter: brightness(0.7);
   transition: 0.3s;
+
 }
 
 .h3images:hover {
@@ -62,6 +67,11 @@
 
 .h3textBlock {
   display: none;
+  font-family: $mainFont;
+}
+
+#textBlockTitle {
+  color: $mainPink;
 }
 
 @media (min-width: 400px) {

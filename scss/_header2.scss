@@ -9,26 +9,22 @@
 
 .slideshowtext {
   position: absolute;
-  margin-right: 15%;
   width: 100%;
   text-align: right;
-  top: 10%;
+  transform: translate(-10%);
+  top: 20%;
   color: $mainYellow;
   font-family: $mainFont;
 }
 
 .welcome {
   font-size: 4rem;
-  text-shadow:
-  -3px 0px 0 $mainBlue,
 }
 
 .period7 {
   font-size: 1.5rem;
   font-style: italic;
   color: $secondaryYellow;
-  text-shadow:
-  -2px 0px 0 $mainBlue,
 }
 
 .slideshow {
@@ -36,6 +32,7 @@
   height: 100%;
   overflow: hidden;
   position: absolute;
+  filter: brightness(.7);
 }
 .slideshow img {
   position: absolute;
@@ -77,19 +74,16 @@
     height: 35vh;
     // margin-top: 2rem;
   }
+
   .welcome {
     font-size: 5rem;
-    margin-right: 6rem;
   }
   .period7 {
     font-size: 2rem;
-    margin-right: 6rem;
-    text-shadow:
-    -2px 0px 0 $mainBlue,
   }
 }
 
-@media (min-width:550px) {
+@media (min-width: 550px) {
   .header2 {
     height: 50vh;
   }
@@ -102,11 +96,9 @@
   }
   .welcome {
     font-size: 7rem;
-    margin-right: 10rem;
   }
   .period7 {
     font-size: 3rem;
-    margin-right: 10rem;
   }
 }
 
@@ -116,13 +108,9 @@
   }
   .welcome {
     font-size: 12rem;
-    margin-right: 13rem;
-    text-shadow:
-    -6px 0px 0 $mainBlue,
   }
   .period7 {
     font-size: 6rem;
-    margin-right: 13rem;
   }
   .place {
     font-size: 4rem;

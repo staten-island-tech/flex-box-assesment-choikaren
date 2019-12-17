@@ -3,7 +3,7 @@
 
 .header1 {
 z-index: -2;
-  height: 25vh;
+  height: 35vh;
   background-color: $mainYellow;
   position: relative;
   // margin-top: 1.5rem;
@@ -53,6 +53,10 @@ h2 {
 //   }
 // }
 @media (min-width: 400px) {
+  .header1 {
+    height: 50vh;
+  }
+  
   #title {
     font-size: 3rem;
     letter-spacing: 3rem;
@@ -60,7 +64,7 @@ h2 {
 }
 @media (min-width: 1000px) {
   .header1 {
-    height: 53vh;
+    height: 70vh;
   }
   #flower {
     width: 30rem;
