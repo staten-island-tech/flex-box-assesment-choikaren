@@ -99,7 +99,9 @@
 }
 
 .btn:hover {
-  background: #ffe600;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background: #ffc400;
   z-index: 3;
 }
 
@@ -289,10 +291,12 @@ h2 {
 }
 
 .welcome {
+  margin-right: 15%;
   font-size: 4rem;
 }
 
 .period7 {
+  margin-right: 15%;
   font-size: 1.5rem;
   font-style: italic;
   color: #ffc400;
