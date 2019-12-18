@@ -82,7 +82,7 @@
 
 .buttons {
   text-align: center;
-  background-color: #ffc400;
+  background-color: #ff004c;
 }
 
 .btn {
@@ -99,8 +99,11 @@
 }
 
 .btn:hover {
+<<<<<<< HEAD
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+=======
+>>>>>>> parent of 362336b... fghjk
   background: #ffc400;
   z-index: 3;
 }
@@ -168,14 +171,9 @@
 }
 
 @media (min-width: 400px) {
-  .top {
-    width: 100%;
-  }
   .banner {
     visibility: visible;
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
+    position: relative;
   }
   .menu {
     visibility: hidden;
@@ -201,7 +199,7 @@
 
 .header1 {
   z-index: -2;
-  height: 35vh;
+  height: 25vh;
   background-color: #ffe600;
   position: relative;
 }
@@ -248,9 +246,6 @@ h2 {
 }
 
 @media (min-width: 400px) {
-  .header1 {
-    height: 50vh;
-  }
   #title {
     font-size: 3rem;
     letter-spacing: 3rem;
@@ -259,7 +254,7 @@ h2 {
 
 @media (min-width: 1000px) {
   .header1 {
-    height: 70vh;
+    height: 53vh;
   }
   #flower {
     width: 30rem;
@@ -281,11 +276,10 @@ h2 {
 
 .slideshowtext {
   position: absolute;
+  margin-right: 15%;
   width: 100%;
   text-align: right;
-  -webkit-transform: translate(-10%);
-          transform: translate(-10%);
-  top: 20%;
+  top: 10%;
   color: #ffe600;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -293,6 +287,7 @@ h2 {
 .welcome {
   margin-right: 15%;
   font-size: 4rem;
+  text-shadow: -3px 0px 0 #070063;
 }
 
 .period7 {
@@ -300,6 +295,7 @@ h2 {
   font-size: 1.5rem;
   font-style: italic;
   color: #ffc400;
+  text-shadow: -2px 0px 0 #070063;
 }
 
 .slideshow {
@@ -307,8 +303,6 @@ h2 {
   height: 100%;
   overflow: hidden;
   position: absolute;
-  -webkit-filter: brightness(0.7);
-          filter: brightness(0.7);
 }
 
 .slideshow img {
@@ -373,9 +367,12 @@ h2 {
   }
   .welcome {
     font-size: 5rem;
+    margin-right: 6rem;
   }
   .period7 {
     font-size: 2rem;
+    margin-right: 6rem;
+    text-shadow: -2px 0px 0 #070063;
   }
 }
 
@@ -391,9 +388,11 @@ h2 {
   }
   .welcome {
     font-size: 7rem;
+    margin-right: 10rem;
   }
   .period7 {
     font-size: 3rem;
+    margin-right: 10rem;
   }
 }
 
@@ -403,9 +402,12 @@ h2 {
   }
   .welcome {
     font-size: 12rem;
+    margin-right: 13rem;
+    text-shadow: -6px 0px 0 #070063;
   }
   .period7 {
     font-size: 6rem;
+    margin-right: 13rem;
   }
   .place {
     font-size: 4rem;
@@ -418,7 +420,6 @@ h2 {
 .header3 {
   position: relative;
   background-color: #070063;
-  z-index: -2;
 }
 
 .entireBlock {
@@ -443,16 +444,12 @@ h2 {
   z-index: 5;
 }
 
-.photoGrid:hover .imageBlock:not(:hover) {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
 .photoGridText {
   z-index: 3;
   position: absolute;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffc400;
+  text-shadow: -3px 0px 0 #070063;
   font-weight: bold;
   margin: 5%;
 }
@@ -496,11 +493,6 @@ h2 {
 
 .h3textBlock {
   display: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-#textBlockTitle {
-  color: #ff004c;
 }
 
 @media (min-width: 400px) {

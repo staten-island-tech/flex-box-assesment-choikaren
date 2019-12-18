@@ -78,7 +78,7 @@
 
 .buttons {
   text-align: center;
-  background-color: $secondaryYellow;
+  background-color: $mainPink;
 }
 
 .btn {
@@ -94,7 +94,11 @@
 }
 
 .btn:hover {
+<<<<<<< HEAD
   transform: scale(1.2);
+=======
+  // transform: scale(1.2);
+>>>>>>> parent of 362336b... fghjk
   background: $secondaryYellow;
   z-index: 3;
   // border-style: solid;
@@ -157,15 +161,9 @@
 }
 
 @media (min-width: 400px) {
-  .top{
-    width: 100%;
-  }
-  
   .banner {
     visibility: visible;
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
+    position: relative;
   }
 
   .menu {
