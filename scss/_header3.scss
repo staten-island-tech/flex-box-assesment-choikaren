@@ -3,10 +3,13 @@
 .header3 {
   position: relative;
   background-color: $mainBlue;
+
 }
 
 .entireBlock {
     padding: 10%;
+      display: flex;
+  flex-direction: row;
 }
 
 .h3photoGrid {
@@ -62,6 +65,11 @@
 
 .h3textBlock {
   display: none;
+  font-family: $mainFont;
+}
+
+#h3title {
+  color: $mainPink;
 }
 
 @media (min-width: 400px) {
@@ -72,6 +80,7 @@
     margin-left: 3rem;
     min-width: 10rem;
     font-size: 1.1rem;
+    max-width: 15rem;
   }
 
   .entireBlock {
@@ -79,11 +88,12 @@
     flex-direction: row;
     padding: 5%;
   }
+
 }
 
 @media (min-width: 700px) {
   .h3textBlock{
-    min-width: 20rem;
+    min-width: 30rem;
 
   }
 }
