@@ -3,7 +3,7 @@
 
 .header1 {
 z-index: -2;
-  height: 25vh;
+  height: 60vh;
   background-color: $mainYellow;
   position: relative;
   // margin-top: 1.5rem;
@@ -57,10 +57,14 @@ h2 {
     font-size: 3rem;
     letter-spacing: 3rem;
   }
+.header1 {
+  height: 40rem;
+}
+
 }
 @media (min-width: 1000px) {
   .header1 {
-    height: 53vh;
+    height: 65vh;
   }
   #flower {
     width: 30rem;
