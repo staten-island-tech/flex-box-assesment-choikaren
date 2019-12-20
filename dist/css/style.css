@@ -4,29 +4,32 @@
 }
 
 .menu {
-  background-color: #ff004c;
+  background-color: #fc7e7e;
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   cursor: pointer;
   color: #070063;
   position: fixed;
-  right: 4%;
-  width: 25%;
+  margin: 1rem;
+  width: 35%;
   text-align: center;
   z-index: 5;
-  vertical-align: center;
-  height: 3rem;
-  margin-top: 1rem;
+  height: 4rem;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.menu:hover {
+  background-color: #ff004c;
 }
 
 #newButtons {
   background-color: #ffc400;
-  right: 4%;
-  width: 25%;
+  margin: 1rem;
   text-align: center;
-  top: 4rem;
+  width: 35%;
+  top: 4.5rem;
   position: fixed;
-  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,8 +37,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .verticalButtons {
@@ -49,12 +52,25 @@
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   font-size: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
   font-style: italic;
 }
 
 .verticalButtons:hover {
   background-color: #ffe600;
+}
+
+.btnText {
+  width: 100%;
+  height: 100%;
+}
+
+.btnText:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .menuBtn {
@@ -66,8 +82,7 @@
   color: #070063;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  font-size: .8rem;
-  padding: 7%;
+  font-size: 0.8rem;
 }
 
 #menuBtnText {
@@ -75,6 +90,7 @@
       align-content: center;
   text-align: center;
   vertical-align: middle;
+  font-size: 2.5rem;
 }
 
 .overlay1 {
@@ -93,7 +109,7 @@
 
 .buttons {
   text-align: center;
-  background-color: #ff004c;
+  background-color: #fc7e7e;
 }
 
 .btn {
@@ -105,14 +121,14 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   cursor: pointer;
   color: #070063;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .btn:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  background: #ffc400;
+  background: #ffe600;
   z-index: 3;
 }
 
@@ -300,7 +316,6 @@ h2 {
 .welcome {
   margin-right: 15%;
   font-size: 4rem;
-  text-shadow: -3px 0px 0 #070063;
 }
 
 .period7 {
@@ -308,7 +323,6 @@ h2 {
   font-size: 1.5rem;
   font-style: italic;
   color: #ffc400;
-  text-shadow: -2px 0px 0 #070063;
 }
 
 .slideshow {
@@ -385,7 +399,6 @@ h2 {
   .period7 {
     font-size: 2rem;
     margin-right: 6rem;
-    text-shadow: -2px 0px 0 #070063;
   }
 }
 
@@ -416,7 +429,6 @@ h2 {
   .welcome {
     font-size: 12rem;
     margin-right: 13rem;
-    text-shadow: -6px 0px 0 #070063;
   }
   .period7 {
     font-size: 6rem;
@@ -457,30 +469,13 @@ h2 {
           flex-direction: row;
 }
 
-.imageBlock:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  z-index: 5;
-}
-
 .photoGridText {
   z-index: 3;
   position: absolute;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffc400;
-  text-shadow: -3px 0px 0 #070063;
   font-weight: bold;
   margin: 5%;
-}
-
-.photoGridText:hover {
-  color: #ffe600;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .h3column1 {
@@ -527,30 +522,30 @@ h2 {
     color: #ffe600;
     margin-left: 3rem;
     min-width: 10rem;
-    font-size: 1.1rem;
     max-width: 15rem;
   }
-  .entireBlock {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 5%;
+  .h3title {
+    font-size: 1.5rem;
+  }
+  .h3Body {
+    font-size: 1.1rem;
   }
 }
 
 @media (min-width: 700px) {
   .h3textBlock {
     min-width: 30rem;
+    max-width: 50rem;
+  }
+  .h3Body {
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1000px) {
   .h3textBlock {
-    min-width: 50rem;
+    min-width: 70rem;
+    font-size: 3rem;
   }
 }
 

@@ -4,26 +4,17 @@
   position: relative;
   background-color: $mainBlue;
   z-index: -2;
-
 }
 
 .entireBlock {
-    padding: 10%;
-      display: flex;
+  padding: 10%;
+  display: flex;
   flex-direction: row;
 }
 
 .h3photoGrid {
   display: flex;
   flex-direction: row;
-
-
-}
-
-.imageBlock:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-  z-index: 5;
 }
 
 .photoGridText {
@@ -31,22 +22,14 @@
   position: absolute;
   font-family: $mainFont;
   color: $secondaryYellow;
-  text-shadow: -3px 0px 0 $mainBlue;
   font-weight: bold;
   margin: 5%;
-}
-
-.photoGridText:hover {
-  color: $mainYellow;
-  transform: scale(1.2);
-  transition: 0.3s;
 }
 
 .h3column1 {
   width: 100%;
   font-size: 3rem;
 }
-
 
 .h3column2 {
   display: flex;
@@ -74,34 +57,37 @@
 }
 
 @media (min-width: 400px) {
-  
-    .h3textBlock {
+  .h3textBlock {
     display: inline-block;
     color: $mainYellow;
     margin-left: 3rem;
     min-width: 10rem;
-    font-size: 1.1rem;
     max-width: 15rem;
   }
 
-  .entireBlock {
-    display: flex;
-    flex-direction: row;
-    padding: 5%;
+  .h3title {
+    font-size: 1.5rem;
   }
 
+  .h3Body {
+    font-size: 1.1rem;
+  }
 }
 
 @media (min-width: 700px) {
-  .h3textBlock{
+  .h3textBlock {
     min-width: 30rem;
+    max-width: 50rem;
+  }
 
+  .h3Body {
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1000px) {
-    .h3textBlock{
-      min-width: 50rem;
-  
-    }
+  .h3textBlock {
+    min-width: 70rem;
+    font-size: 3rem;
   }
+}
