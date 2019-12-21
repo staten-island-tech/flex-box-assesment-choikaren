@@ -9,21 +9,21 @@
 
 .slideshowtext {
   position: absolute;
-  margin-right: 15%;
   width: 100%;
   text-align: right;
-  top: 20%;
+  top: 50%;
   color: $mainYellow;
   font-family: $mainFont;
 }
 
 .welcome {
-  margin-right: 15%;
   font-size: 4rem;
+  margin-right: 15%;
 }
 
 .period7 {
   margin-right: 15%;
+  margin-top: 4%;
   font-size: 1.5rem;
   font-style: italic;
   color: $secondaryYellow;
@@ -34,6 +34,7 @@
   height: 100%;
   overflow: hidden;
   position: absolute;
+  filter: brightness(.7);
 }
 .slideshow img {
   position: absolute;
@@ -43,7 +44,7 @@
 }
 
 @keyframes slideshow {
-  15% {
+  10% {
     opacity: 1;
   }
   90% {

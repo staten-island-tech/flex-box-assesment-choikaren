@@ -23,7 +23,7 @@ z-index: -2;
 }
 
 #flower {
-  width: 13rem;
+  width: 20rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -47,11 +47,14 @@ h2 {
 //   }
 // }
 
-// @media (min-width: 700px) {
-//   .header1 {
-//     margin-top: 3rem;
-//   }
-// }
+@media (min-width: 700px) {
+  // .header1 {
+  //   margin-top: 3rem;
+  // }
+#flower {
+  width: 25rem;
+}
+}
 @media (min-width: 400px) {
   #title {
     font-size: 3rem;
@@ -67,7 +70,7 @@ h2 {
     height: 65vh;
   }
   #flower {
-    width: 30rem;
+    width: 40rem;
   }
   #title {
     font-size: 5rem;

@@ -32,6 +32,10 @@
 }
 
 @media (min-width: 400px) {
+
+  .image {
+    min-width: 17rem;
+  }
   // .header4 {
   //   // margin-top: 2rem;
   //   height: 175rem;
@@ -53,7 +57,7 @@
     flex-direction: row;
   }
   .image {
-    width: 40%;
+    min-width: 30rem;
   }
   .textinrow {
     text-align: left;
