@@ -2,7 +2,6 @@
 
 
 .header1 {
-z-index: -2;
   height: 60vh;
   background-color: $mainYellow;
   position: relative;
@@ -28,13 +27,13 @@ z-index: -2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -2;
 }
 
 #title {
   letter-spacing: 2rem;
   font-size: 2rem;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 h2 {
