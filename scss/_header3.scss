@@ -18,7 +18,7 @@
 }
 
 .photoGridText {
-  z-index: 3;
+  z-index: 1;
   position: absolute;
   font-family: $mainFont;
   color: $secondaryYellow;
@@ -69,6 +69,34 @@
   text-align: right;
 }
 
+
+.learnMore {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  font-family: $mainFont;
+  color: $secondaryPink;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 1rem;
+  float: right;
+}
+
+.learnMore:hover {
+color: $mainPink;
+transition: ease-in 0.3s;
+}
+
+.learnMore:hover #learnMoreP2 {
+  display: inline;
+}
+
+#learnMoreP2 {
+  margin-left: 1rem;
+  display: none;
+}
+
 @media (min-width: 400px) {
   // .entireBlock {
   //   display: flex;
@@ -103,33 +131,6 @@
     display: inline-block;
     text-align: right;
     font-size: 1.5rem;
-  }
-
-  .learnMore {
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    font-family: $mainFont;
-    color: $secondaryPink;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 2rem;
-    margin-top: 1rem;
-    float: right;
-  }
-
-.learnMore:hover {
-  color: $mainPink;
-  transition: ease-in 0.3s;
-}
-
-  .learnMore:hover #learnMoreP2 {
-    display: inline;
-  }
-
-  #learnMoreP2 {
-    margin-left: 1rem;
-    display: none;
   }
 }
 

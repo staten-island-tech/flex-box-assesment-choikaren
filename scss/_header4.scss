@@ -8,6 +8,7 @@
   padding: 3rem;
 }
 
+
 .textinrow {
   position: relative;
   margin: 2rem;
@@ -21,7 +22,7 @@
 .description {
   font-size: 1.5rem;
   color: $mainYellow;
-  margin-bottom: 2rem;
+  margin: auto;
 }
 
 .image {
@@ -49,11 +50,11 @@
   .header4-pictures {
     display: flex;
     flex-direction: column;
-    margin-left: 3rem;
   }
   .imagerow {
     display: flex;
     flex-direction: row;
+    margin: 2rem;
   }
   .image {
     min-width: 30rem;
@@ -61,7 +62,6 @@
   .textinrow {
     text-align: left;
     margin-left: 3rem;
-    margin-right: 3rem;
   }
 }
 
