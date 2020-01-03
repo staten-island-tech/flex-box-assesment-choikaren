@@ -226,7 +226,7 @@
 }
 
 .header1 {
-  height: 60vh;
+  height: 100vh;
   background-color: #ffe600;
   position: relative;
 }
@@ -283,15 +283,9 @@ h2 {
     font-size: 3rem;
     letter-spacing: 3rem;
   }
-  .header1 {
-    height: 40rem;
-  }
 }
 
 @media (min-width: 1000px) {
-  .header1 {
-    height: 75vh;
-  }
   #flower {
     width: 40rem;
   }
@@ -685,10 +679,14 @@ h2 {
 
 @media (min-width: 1000px) {
   .description {
-    font-size: rem;
+    font-size: 3rem;
+  }
+  .place {
+    font-size: 5rem;
+    margin-bottom: 1rem;
   }
   .image {
-    width: 70%;
+    min-width: 40%;
   }
 }
 

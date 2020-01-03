@@ -70,10 +70,17 @@
   //   height: 150rem;
   // }
   .description {
-    font-size: rem;
+    font-size: 3rem;
   }
+
+.place {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
   .image {
-    width: 70%;
+    // width: 70%;
+    min-width: 40%;
   }
 
 }

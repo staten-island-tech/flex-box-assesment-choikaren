@@ -2,7 +2,7 @@
 
 
 .header1 {
-  height: 60vh;
+  height: 100vh;
   background-color: $mainYellow;
   position: relative;
   // margin-top: 1.5rem;
@@ -59,15 +59,15 @@ h2 {
     font-size: 3rem;
     letter-spacing: 3rem;
   }
-.header1 {
-  height: 40rem;
-}
+// .header1 {
+//   height: 40rem;
+// }
 
 }
 @media (min-width: 1000px) {
-  .header1 {
-    height: 75vh;
-  }
+  // .header1 {
+  //   height: 75vh;
+  // }
   #flower {
     width: 40rem;
   }
