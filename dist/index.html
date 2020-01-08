@@ -4,76 +4,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="dist\css\style.css" />
-    <link rel="icon" href="dist\css\img\LOGOO.png" />
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="icon" href="css\img\LOGOO.png" />
   </head>
   <body>
-    <section class="Top">
-      <div class="menu">
-        <a class="link" href="#newButtons">
-          <button class="menuBtn"><h1 id="menuBtnText">Menu</h1></button>
+    <section class="nagivationBar">
+      <div class="navigationBar-menu">
+        <a class="link" href="#menu">
+          <button class="menu-button">
+            <h1 id="menu-button-text">Menu</h1> 
+          </button>
         </a>
       </div>
-      <div id="newButtons" class="overlay1">
+      <div id="menu" class="menu-dropDown">
         <div>
           <a
             class="link"
             href="https://www.google.com/search?q=crocs&client=firefox-b-1-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiH5oPbvZrmAhWil-AKHSP6CKMQ_AUoA3oECBEQBQ&biw=473&bih=937&dpr=2"
           >
-            <button class="verticalButtons">
-              <div class="btnText">SUCCESS</div>
-            </button>
-          </a>
-        </div>
-        <div>
-          <button class="verticalButtons" onclick="alert('NOOB')">
-            <div class="btnText">YOU</div>
-          </button>
-        </div>
-        <div>
-          <a class="link" href="#popup1">
-            <button class="verticalButtons">
-              <div class="btnText">DUN</div>
+            <button class="menu-dropDown-buttons">
+              <div class="buttons-text">SUCCESS</div>
             </button>
           </a>
         </div>
         <div>
           <a class="link" href="#popup2">
-            <button class="verticalButtons">
-              <div class="btnText">GOOFED</div>
+            <button class="menu-dropDown-buttons">
+              <div class="buttons-text">YOU</div>
+            </button>
+          </a>
+        </div>
+        <!-- <div>
+          <a class="link" href="#popup1">
+            <button class="menu-dropDown-buttons">
+              <div class="buttons-text">DUN</div>
+            </button>
+          </a>
+        </div> -->
+        <div>
+          <a class="link" href="#">
+            <button class="menu-dropDown-buttons">
+              <div class="buttons-text">GALLERY</div>
             </button>
           </a>
         </div>
         <div>
           <a href="#"
-            ><button class="verticalButtons">
-              <div class="btnText">!</div>
+            ><button class="menu-dropDown-buttons">
+              <div class="buttons-text">close</div>
             </button></a
           >
         </div>
       </div>
-      <div class="banner">
-        <div class="buttons">
+      <div class="navigationBar-banner">
+        <div class="banner">
           <a
             class="link"
-            href="https://www.google.com/search?q=crocs&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj7rPOi5PzlAhWqrFkKHVyhAvoQ_AUoA3oECBkQBQ&biw=766&bih=749&dpr=2.5"
+            hrefc="https://www.google.com/search?q=crocs&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj7rPOi5PzlAhWqrFkKHVyhAvoQ_AUoA3oECBkQBQ&biw=766&bih=749&dpr=2.5"
           >
-            <button class="btn">Success</button>
+            <button class="banner-buttons">Success</button>
           </a>
-          <a class="link" href=""><button class="btn">YOU</button></a>
-          <a class="link" href="#popup1">
-            <button class="btn">DUN</button>
+          <a class="link" href="#popup2"></a>
+            <button class="banner-buttons">YOU</button> 
           </a>
-          <a class="link" href="#popup2">
-            <button class="btn">GOOFED</button>
-          </a>
+          <!-- <a class="link" href="#popup1">
+            <button class="banner-buttons">DUN</button>
+          </a> -->
           <a class="link" href="#header3">
-            <button class="btn">
+            <button class="banner-buttons">
+              <body>
+                GALLERY
+              </body>
+            </button>
+          </a>
+          <!-- <a class="link" href="#header3">
+            <button class="banner-buttons">
               <body>
                 !
               </body>
             </button>
-          </a>
+          </a> -->
         </div>
       </div>
       <div id="popup1" class="overlay">
@@ -96,22 +106,25 @@
       </div>
     </section>
 
-    <section class="header1">
-      <div class="header1-text">
-        <h1 id="title">mighty morning</h1>
-        <h2>carpe diem !</h2>
-        <img id="flower" src="dist\css/img/rose.png" alt="" />
+    <section class="header">
+      <div class="header-text">
+        <div class="header-text-title">
+          <div>mighty</div>
+          <div>morning</div>
+        </div>
+        <div id="header-text-subtitle">carpe diem !</div>
+        <img id="header-image" src="css/img/rose.png" alt="" />
       </div>
     </section>
 
     <section class="header2">
       <div class="slideshow">
-        <img src="dist\css/img/lake.JPG" alt="Slide 1" />
-        <img src="dist\css/img/brown.jpg" alt="Slide 2" />
-        <img src="dist\css/img/fire.JPG" alt="Slide 3" />
-        <img src="dist\css/img/rainbow.jpg" alt="Slide 4" />
-        <img src="dist\css/img/bridge.jpg" alt="Slide 5" />
-        <img src="dist\css/img/camp.jpg" alt="Slide 6" />
+        <img src="css/img/lake.JPG" alt="Slide 1" />
+        <img src="css/img/brown.jpg" alt="Slide 2" />
+        <img src="css/img/fire.JPG" alt="Slide 3" />
+        <img src="css/img/rainbow.jpg" alt="Slide 4" />
+        <img src="css/img/bridge.jpg" alt="Slide 5" />
+        <img src="css/img/camp.jpg" alt="Slide 6" />
       </div>
       <div class="slideshowtext">
         <h1 class="welcome">WELCOME</h1>
@@ -119,7 +132,7 @@
       </div>
     </section>
 
-    <section  id="header3" class="header3">
+    <section id="header3" class="header3">
       <div class="entireBlock">
         <div class="h3photoGrid">
           <div class="h3column1">
@@ -129,7 +142,7 @@
               </p>
               <img
                 class="h3images"
-                src="dist/css/img/me and elaine.jpg"
+                src="css/img/me and elaine.jpg"
                 alt=""
               />
             </div>
@@ -139,19 +152,19 @@
               <p class="photoGridText">
                 dsd
               </p>
-              <img class="h3images" src="dist/css/img/lake.JPG" alt="" />
+              <img class="h3images" src="css/img/lake.JPG" alt="" />
             </div>
             <div class="imageBlock">
               <p class="photoGridText">
                 dsd
               </p>
-              <img class="h3images" src="dist/css/img/bridge.jpg" alt="" />
+              <img class="h3images" src="css/img/bridge.jpg" alt="" />
             </div>
             <div class="imageBlock">
               <p class="photoGridText">
                 dsd
               </p>
-              <img class="h3images" src="dist/css/img/fire.JPG" alt="" />
+              <img class="h3images" src="css/img/fire.JPG" alt="" />
             </div>
           </div>
         </div>
@@ -165,20 +178,20 @@
               pertinax pericula sapientem.
             </p>
           </body>
-          <div class="h3button" >
+          <div class="h3button">
             <a class="learnMore" href="">
-              <div id="learnMoreP1" >Learn More</div>
-              <div id="learnMoreP2" > → </div> </a>
+              <div id="learnMoreP1">Learn More</div>
+              <div id="learnMoreP2">→</div>
+            </a>
           </div>
         </div>
-
       </div>
     </section>
 
     <section class="header4" id="header4">
       <div class="pictures" id="pictures">
         <div class="imagerow">
-          <img class="image" src="dist\css/img/lake.JPG" alt="" />
+          <img class="image" src="css/img/lake.JPG" alt="" />
 
           <div class="textinrow">
             <h1 class="place">Camp Westmont</h1>
@@ -191,7 +204,7 @@
           </div>
         </div>
         <div class="imagerow">
-          <img class="image" src="dist\css/img/rainbow.jpg" alt="" />
+          <img class="image" src="css/img/rainbow.jpg" alt="" />
 
           <div class="textinrow">
             <h1 class="place">Governor's Island</h1>
@@ -204,7 +217,7 @@
           </div>
         </div>
         <div class="imagerow">
-          <img class="image" src="dist\css/img/bridge.jpg" alt="" />
+          <img class="image" src="css/img/bridge.jpg" alt="" />
 
           <div class="textinrow">
             <h1 class="place">Verrazano Bridge</h1>
@@ -217,7 +230,7 @@
           </div>
         </div>
         <div class="imagerow">
-          <img class="image" src="dist\css/img/camp.jpg" alt="" />
+          <img class="image" src="css/img/camp.jpg" alt="" />
 
           <div class="textinrow">
             <h1 class="place">Camp</h1>

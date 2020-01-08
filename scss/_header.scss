@@ -1,14 +1,13 @@
 @import "./_variables.scss";
 
-
-.header1 {
+.header {
   height: 100vh;
   background-color: $mainYellow;
   position: relative;
-  // margin-top: 1.5rem;
 }
 
-.header1-text {
+
+.header-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -19,63 +18,67 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-weight: bold;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-#flower {
+
+#header-image {
   width: 20rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
-#title {
+.header-text-title {
   letter-spacing: 2rem;
-  font-size: 2rem;
   text-transform: uppercase;
   z-index: 1;
 }
 
-h2 {
+#header-text-subtitle {
   font-size: 1.5rem;
 }
 
 // @media (min-width: 400px) {
-//   .header1 {
+//   .header {
 //     margin-top: 2rem;
 //   }
 // }
 
 @media (min-width: 700px) {
-  // .header1 {
+  // .header {
   //   margin-top: 3rem;
   // }
-#flower {
+#header-image {
   width: 25rem;
 }
 }
 @media (min-width: 400px) {
-  #title {
+  .header-text-title {
     font-size: 3rem;
     letter-spacing: 3rem;
   }
-// .header1 {
+// .header {
 //   height: 40rem;
 // }
 
 }
 @media (min-width: 1000px) {
-  // .header1 {
+  // .header {
   //   height: 75vh;
   // }
-  #flower {
+  #header-image {
     width: 40rem;
   }
-  #title {
+  .header-text-title {
     font-size: 5rem;
     letter-spacing: 5rem;
   }
-  h2 {
+  #header-text-subtitle {
     font-size: 3rem;
   }
 }

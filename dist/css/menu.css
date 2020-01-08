@@ -1,39 +1,43 @@
-@import "./_variables.scss";
-
 .banner {
   visibility: hidden;
   position: absolute;
-  // margin-top: 1.5rem;
 }
 
 .menu {
-  background-color: $secondaryPink;
+  background-color: #fc7e7e;
   font-weight: bold;
-  font-family: $mainFont;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   cursor: pointer;
-  color: $mainBlue;
+  color: #070063;
   position: fixed;
   margin: 1rem;
   width: 35%;
   text-align: center;
   height: 4rem;
+  -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
   z-index: 1;
 }
 
 .menu:hover {
-  background-color: $mainPink;
+  background-color: #ff004c;
 }
 
 #newButtons {
-  background-color: $secondaryYellow;
+  background-color: #ffc400;
   margin: 1rem;
   text-align: center;
   width: 35%;
   top: 4.5rem;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
   z-index: 1;
 }
@@ -43,17 +47,18 @@
   background-color: inherit;
   border: none;
   font-weight: bold;
-  font-family: $mainFont;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   cursor: pointer;
-  color: $mainBlue;
-  transition: all 0.3s ease-out;
+  color: #070063;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
   font-size: 1rem;
   padding: 0.5rem;
   font-style: italic;
 }
 
 .verticalButtons:hover {
-  background-color: $mainYellow;
+  background-color: #ffe600;
 }
 
 .btnText {
@@ -62,8 +67,10 @@
 }
 
 .btnText:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   overflow: hidden;
+  -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
 
@@ -71,15 +78,17 @@
   border: none;
   background-color: inherit;
   font-weight: bold;
-  font-family: $mainFont;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   cursor: pointer;
-  color: $mainBlue;
-  transition: all 0.3s ease-out;
+  color: #070063;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
   font-size: 0.8rem;
 }
 
 #menuBtnText {
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   text-align: center;
   vertical-align: middle;
   font-size: 2.5rem;
@@ -101,8 +110,7 @@
 
 .buttons {
   text-align: center;
-  background-color: $secondaryPink;
-
+  background-color: #fc7e7e;
 }
 
 .btn {
@@ -111,19 +119,18 @@
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: $mainFont;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   cursor: pointer;
-  color: $mainBlue;
-  transition: all 0.2s ease-out;
+  color: #070063;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .btn:hover {
-  transform: scale(1.2);
-  // transform: scale(1.2);
-  background: $mainYellow;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background: #ffe600;
   z-index: 2;
-  // border-style: solid;
-  // border-width: .5rem;
 }
 
 .overlay {
@@ -133,11 +140,13 @@
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
-  transition: opacity 200ms;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
   visibility: hidden;
   opacity: 0;
   z-index: 2;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -148,25 +157,27 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background: $mainYellow;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #ffe600;
   width: 30%;
   position: relative;
-  transition: all 5s ease-in-out;
-  color: $mainBlue;
-  font-family: $mainFont;
+  color: #070063;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .popup h2 {
   margin-top: 0;
-  background: $mainYellow;
-  font-family: $mainFont;
+  background: #ffe600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 .popup .close {
   position: absolute;
   top: 5px;
   right: 10px;
-  transition: all 0.2s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
@@ -174,7 +185,8 @@
 }
 
 .close:hover {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .link {
@@ -189,21 +201,15 @@
     overflow: hidden;
     z-index: 2;
   }
-
   .menu {
     visibility: hidden;
   }
-
   #newButtons {
     visibility: hidden;
   }
   .verticalButtons {
     visibility: hidden;
   }
-
-  // .top {
-  //   margin-top: 2rem;
-  // }
 }
 
 @media (min-width: 700px) {
@@ -215,7 +221,5 @@
     padding: 1rem 3rem;
     font-size: 2rem;
   }
-  // .top {
-  //   margin-top: 3rem;
-  // }
 }
+/*# sourceMappingURL=menu.css.map */

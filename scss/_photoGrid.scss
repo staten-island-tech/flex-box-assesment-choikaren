@@ -85,7 +85,7 @@
 
 .learnMore:hover {
 color: $mainPink;
-transition: ease-in 0.3s;
+transition: ease-in 0.1s;
 }
 
 .learnMore:hover #learnMoreP2 {
@@ -132,12 +132,17 @@ transition: ease-in 0.3s;
     text-align: right;
     font-size: 1.5rem;
   }
+
+  .h3photoGrid {
+    min-width: 30rem;
+  }
+
 }
 
 @media (min-width: 700px) {
   .h3textBlock {
     min-width: 30rem;
-    max-width: 50rem;
+    max-width: 40rem;
   }
 
 #h3title {
@@ -147,6 +152,11 @@ transition: ease-in 0.3s;
   #h3Body {
     font-size: 1.7rem;
   }
+
+  .h3photoGrid {
+    min-width: 40rem;
+  }
+  
 }
 
 @media (min-width: 1000px) {
@@ -155,14 +165,17 @@ transition: ease-in 0.3s;
   }
   
   .h3textBlock {
-    min-width: 70rem;
+    min-width: 20rem;
+    max-width: 30rem;
   }
 
   #h3title {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   #h3Body {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
+
+
 }

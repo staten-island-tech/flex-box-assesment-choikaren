@@ -1,9 +1,9 @@
-.banner {
+.navigationBar-banner {
   visibility: hidden;
   position: absolute;
 }
 
-.menu {
+.navigationBar-menu {
   background-color: #fc7e7e;
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -19,11 +19,11 @@
   z-index: 1;
 }
 
-.menu:hover {
+.navigationBar-menu:hover {
   background-color: #ff004c;
 }
 
-#newButtons {
+#menu {
   background-color: #ffc400;
   margin: 1rem;
   text-align: center;
@@ -42,7 +42,7 @@
   z-index: 1;
 }
 
-.verticalButtons {
+.menu-dropDown-buttons {
   width: 100%;
   background-color: inherit;
   border: none;
@@ -50,23 +50,23 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   cursor: pointer;
   color: #070063;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
   font-size: 1rem;
   padding: 0.5rem;
   font-style: italic;
 }
 
-.verticalButtons:hover {
+.menu-dropDown-buttons:hover {
   background-color: #ffe600;
 }
 
-.btnText {
+.buttons-text {
   width: 100%;
   height: 100%;
 }
 
-.btnText:hover {
+.buttons-text:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   overflow: hidden;
@@ -74,19 +74,19 @@
   transition: all 0.1s ease-out;
 }
 
-.menuBtn {
+.menu-button {
   border: none;
   background-color: inherit;
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   cursor: pointer;
   color: #070063;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
   font-size: 0.8rem;
 }
 
-#menuBtnText {
+#menu-button-text {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
@@ -94,11 +94,11 @@
   font-size: 2.5rem;
 }
 
-.overlay1 {
+.menu-dropDown {
   visibility: hidden;
 }
 
-.overlay1:target {
+.menu-dropDown:target {
   visibility: visible;
   opacity: 1;
 }
@@ -108,12 +108,12 @@
   left: 50%;
 }
 
-.buttons {
+.banner {
   text-align: center;
   background-color: #fc7e7e;
 }
 
-.btn {
+.banner-buttons {
   border: none;
   background-color: inherit;
   padding: 1rem 1.5rem;
@@ -122,11 +122,11 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   cursor: pointer;
   color: #070063;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
-.btn:hover {
+.banner-buttons:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   background: #ffe600;
@@ -140,8 +140,8 @@
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
-  -webkit-transition: opacity 200ms;
-  transition: opacity 200ms;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
   visibility: hidden;
   opacity: 0;
   z-index: 2;
@@ -162,8 +162,6 @@
   background: #ffe600;
   width: 30%;
   position: relative;
-  -webkit-transition: all 5s ease-in-out;
-  transition: all 5s ease-in-out;
   color: #070063;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -178,8 +176,8 @@
   position: absolute;
   top: 5px;
   right: 10px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
@@ -196,20 +194,20 @@
 }
 
 @media (min-width: 400px) {
-  .banner {
+  .navigationBar-banner {
     visibility: visible;
     position: fixed;
     width: 100%;
     overflow: hidden;
     z-index: 2;
   }
-  .menu {
+  .navigationBar-menu {
     visibility: hidden;
   }
   #newButtons {
     visibility: hidden;
   }
-  .verticalButtons {
+  .menu-dropDown-buttons {
     visibility: hidden;
   }
 }
@@ -219,19 +217,19 @@
     top: 15px;
     right: 20px;
   }
-  .btn {
+  .banner-buttons {
     padding: 1rem 3rem;
     font-size: 2rem;
   }
 }
 
-.header1 {
+.header {
   height: 100vh;
   background-color: #ffe600;
   position: relative;
 }
 
-.header1-text {
+.header-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -250,50 +248,53 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: bold;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-#flower {
+#header-image {
   width: 20rem;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
-#title {
+.header-text-title {
   letter-spacing: 2rem;
-  font-size: 2rem;
   text-transform: uppercase;
   z-index: 1;
 }
 
-h2 {
+#header-text-subtitle {
   font-size: 1.5rem;
 }
 
 @media (min-width: 700px) {
-  #flower {
+  #header-image {
     width: 25rem;
   }
 }
 
 @media (min-width: 400px) {
-  #title {
+  .header-text-title {
     font-size: 3rem;
     letter-spacing: 3rem;
   }
 }
 
 @media (min-width: 1000px) {
-  #flower {
+  #header-image {
     width: 40rem;
   }
-  #title {
+  .header-text-title {
     font-size: 5rem;
     letter-spacing: 5rem;
   }
-  h2 {
+  #header-text-subtitle {
     font-size: 3rem;
   }
 }
@@ -539,8 +540,8 @@ h2 {
 
 .learnMore:hover {
   color: #ff004c;
-  -webkit-transition: ease-in 0.3s;
-  transition: ease-in 0.3s;
+  -webkit-transition: ease-in 0.1s;
+  transition: ease-in 0.1s;
 }
 
 .learnMore:hover #learnMoreP2 {
@@ -581,18 +582,24 @@ h2 {
     text-align: right;
     font-size: 1.5rem;
   }
+  .h3photoGrid {
+    min-width: 30rem;
+  }
 }
 
 @media (min-width: 700px) {
   .h3textBlock {
     min-width: 30rem;
-    max-width: 50rem;
+    max-width: 40rem;
   }
   #h3title {
     font-size: 4rem;
   }
   #h3Body {
     font-size: 1.7rem;
+  }
+  .h3photoGrid {
+    min-width: 40rem;
   }
 }
 
@@ -601,13 +608,14 @@ h2 {
     padding: 6%;
   }
   .h3textBlock {
-    min-width: 70rem;
+    min-width: 20rem;
+    max-width: 30rem;
   }
   #h3title {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   #h3Body {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 
