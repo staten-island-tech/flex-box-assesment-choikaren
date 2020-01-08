@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="dist\css\style.css" />
-    <link rel="icon" href="dist\css\img\LOGOO.png" />
+    <link rel="icon" href="dist/css\img\LOGOO.png" />
   </head>
   <body>
     <section class="nagivationBar">
       <div class="navigationBar-menu">
         <a class="link" href="#menu">
           <button class="menu-button">
-            <h1 id="menu-button-text">Menu</h1>
+            <h1 id="menu-button-text">Menu</h1> 
           </button>
         </a>
       </div>
@@ -28,21 +28,15 @@
           </a>
         </div>
         <div>
-          <a class="link" href="#popup2">
+          <a class="link" href="#button-popUp">
             <button class="menu-dropDown-buttons">
               <div class="buttons-text">YOU</div>
             </button>
           </a>
         </div>
-        <!-- <div>
-          <a class="link" href="#popup1">
-            <button class="menu-dropDown-buttons">
-              <div class="buttons-text">DUN</div>
-            </button>
-          </a>
-        </div> -->
+
         <div>
-          <a class="link" href="#">
+          <a class="link" href="#photoGrid">
             <button class="menu-dropDown-buttons">
               <div class="buttons-text">GALLERY</div>
             </button>
@@ -55,7 +49,9 @@
             </button></a
           >
         </div>
+
       </div>
+
       <div class="navigationBar-banner">
         <div class="banner">
           <a
@@ -64,46 +60,36 @@
           >
             <button class="banner-buttons">Success</button>
           </a>
-          <a class="link" href="#popup2"></a>
-            <button class="banner-buttons">YOU</button> 
+
+          <a class="link" href="#button-popUp">
+            <button class="banner-buttons">
+              <body>
+                YOU
+              </body>
+            </button>
           </a>
-          <!-- <a class="link" href="#popup1">
-            <button class="banner-buttons">DUN</button>
-          </a> -->
-          <a class="link" href="#header3">
+
+          <a class="link" href="#photoGrid">
             <button class="banner-buttons">
               <body>
                 GALLERY
               </body>
             </button>
           </a>
-          <!-- <a class="link" href="#header3">
-            <button class="banner-buttons">
-              <body>
-                !
-              </body>
-            </button>
-          </a> -->
+        
         </div>
       </div>
-      <div id="popup1" class="overlay">
-        <div class="popup">
+
+      <div id="button-popUp" class="popUp-overlay">
+        <div class="popUp-box">
           <h2>YUH</h2>
-          <a class="close" href="#">&times;</a>
+          <a class="popUp-box-closeSymbol" href="#">&times;</a>
           <div class="content">
             <p>woof</p>
           </div>
         </div>
       </div>
-      <div id="popup2" class="overlay">
-        <div class="popup">
-          <h2>BUTTONS</h2>
-          <a class="close" href="#">&times;</a>
-          <div class="content">
-            <p>woof</p>
-          </div>
-        </div>
-      </div>
+      
     </section>
 
     <section class="header">
@@ -119,12 +105,12 @@
 
     <section class="header2">
       <div class="slideshow">
-        <img src="dist\css/img/lake.JPG" alt="Slide 1" />
-        <img src="dist\css/img/brown.jpg" alt="Slide 2" />
-        <img src="dist\css/img/fire.JPG" alt="Slide 3" />
-        <img src="dist\css/img/rainbow.jpg" alt="Slide 4" />
-        <img src="dist\css/img/bridge.jpg" alt="Slide 5" />
-        <img src="dist\css/img/camp.jpg" alt="Slide 6" />
+        <img src="dist/css/img/lake.JPG" alt="Slide 1" />
+        <img src="dist/css/img/brown.jpg" alt="Slide 2" />
+        <img src="dist/css/img/fire.JPG" alt="Slide 3" />
+        <img src="dist/css/img/rainbow.jpg" alt="Slide 4" />
+        <img src="dist/css/img/bridge.jpg" alt="Slide 5" />
+        <img src="dist/css/img/camp.jpg" alt="Slide 6" />
       </div>
       <div class="slideshowtext">
         <h1 class="welcome">WELCOME</h1>
@@ -132,56 +118,58 @@
       </div>
     </section>
 
-    <section id="header3" class="header3">
-      <div class="entireBlock">
-        <div class="h3photoGrid">
-          <div class="h3column1">
-            <div class="imageBlock">
-              <p class="photoGridText" id="column1Text">
+    <section id="header3">
+      <div class="header3">
+
+        <div class="header3-photoGrid">
+          <div class="photoGrid-column1">
+            <div class="photoGrid-imageBlock">
+              <p class="imageBlock-text">
                 YUH!
               </p>
               <img
-                class="h3images"
+                class="imageBlock-image"
                 src="dist/css/img/me and elaine.jpg"
                 alt=""
               />
             </div>
           </div>
-          <div class="h3column2">
-            <div class="imageBlock">
-              <p class="photoGridText">
+          <div class="photoGrid-column2">
+            <div class="photoGrid-imageBlock">
+              <p class="imageBlock-text">
                 dsd
               </p>
-              <img class="h3images" src="dist/css/img/lake.JPG" alt="" />
+              <img class="imageBlock-image" src="dist/css/img/lake.JPG" alt="" />
             </div>
-            <div class="imageBlock">
-              <p class="photoGridText">
+            <div class="photoGrid-imageBlock">
+              <p class="imageBlock-text">
                 dsd
               </p>
-              <img class="h3images" src="dist/css/img/bridge.jpg" alt="" />
+              <img class="imageBlock-image" src="dist/css/img/bridge.jpg" alt="" />
             </div>
-            <div class="imageBlock">
-              <p class="photoGridText">
+            <div class="photoGrid-imageBlock">
+              <p class="imageBlock-text">
                 dsd
               </p>
-              <img class="h3images" src="dist/css/img/fire.JPG" alt="" />
+              <img class="imageBlock-image" src="dist/css/img/fire.JPG" alt="" />
             </div>
           </div>
         </div>
-        <div class="h3textBlock">
-          <body class="h3textBody">
-            <h1 id="h3title">hbgfd</h1>
-            <p id="h3body">
+
+        <div class="header3-textBlock">
+          <body>
+            <h1 id="textBlock-title">hbgfd</h1>
+            <p id="textBlock-body">
               Lorem ipsum dolor sit amet, discere dissentiunt eam ad. Iracundia
               interesset an has, usu ut labore melius adipisci. Cu nec erant
               iracundia, mea an aeque petentium. At ludus munere qui, et eam
               pertinax pericula sapientem.
             </p>
           </body>
-          <div class="h3button">
-            <a class="learnMore" href="">
-              <div id="learnMoreP1">Learn More</div>
-              <div id="learnMoreP2">→</div>
+          <div class="textBlock-button">
+            <a class="textBlock-button-learnMore" href="">
+              <div id="learnMore-P1">Learn More</div>
+              <div id="learnMore-P2">→</div>
             </a>
           </div>
         </div>
@@ -191,7 +179,7 @@
     <section class="header4" id="header4">
       <div class="pictures" id="pictures">
         <div class="imagerow">
-          <img class="image" src="dist\css/img/lake.JPG" alt="" />
+          <img class="image" src="dist/css/img/lake.JPG" alt="" />
 
           <div class="textinrow">
             <h1 class="place">Camp Westmont</h1>
@@ -204,7 +192,7 @@
           </div>
         </div>
         <div class="imagerow">
-          <img class="image" src="dist\css/img/rainbow.jpg" alt="" />
+          <img class="image" src="dist/css/img/rainbow.jpg" alt="" />
 
           <div class="textinrow">
             <h1 class="place">Governor's Island</h1>
@@ -217,7 +205,7 @@
           </div>
         </div>
         <div class="imagerow">
-          <img class="image" src="dist\css/img/bridge.jpg" alt="" />
+          <img class="image" src="dist/css/img/bridge.jpg" alt="" />
 
           <div class="textinrow">
             <h1 class="place">Verrazano Bridge</h1>
@@ -230,7 +218,7 @@
           </div>
         </div>
         <div class="imagerow">
-          <img class="image" src="dist\css/img/camp.jpg" alt="" />
+          <img class="image" src="dist/css/img/camp.jpg" alt="" />
 
           <div class="textinrow">
             <h1 class="place">Camp</h1>

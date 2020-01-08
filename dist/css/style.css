@@ -103,7 +103,7 @@
   opacity: 1;
 }
 
-.popup1 {
+.button-popUp {
   top: 50%;
   left: 50%;
 }
@@ -133,7 +133,7 @@
   z-index: 2;
 }
 
-.overlay {
+.popUp-overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -144,15 +144,15 @@
   transition: opacity 0.1s;
   visibility: hidden;
   opacity: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
-.overlay:target {
+.popUp-overlay:target {
   visibility: visible;
   opacity: 1;
 }
 
-.popup {
+.popUp-box {
   padding: 15px;
   position: absolute;
   top: 50%;
@@ -164,15 +164,16 @@
   position: relative;
   color: #070063;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  z-index: 3;
 }
 
-.popup h2 {
+.popUp-box h2 {
   margin-top: 0;
   background: #ffe600;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.popup .close {
+.popUp-box .popUp-box-closeSymbol {
   position: absolute;
   top: 5px;
   right: 10px;
@@ -184,7 +185,7 @@
   color: #333;
 }
 
-.close:hover {
+.popUp-box-closeSymbol:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
@@ -213,7 +214,7 @@
 }
 
 @media (min-width: 700px) {
-  .popup .close {
+  .popUp-box .popUp-box-closeSymbol {
     top: 15px;
     right: 20px;
   }
@@ -281,8 +282,11 @@
 
 @media (min-width: 400px) {
   .header-text-title {
-    font-size: 3rem;
-    letter-spacing: 3rem;
+    font-size: 4rem;
+    letter-spacing: 4rem;
+  }
+  #header-text-subtitle {
+    font-size: 2rem;
   }
 }
 
@@ -433,12 +437,12 @@
   }
 }
 
-.header3 {
+#header3 {
   position: relative;
   background-color: #070063;
 }
 
-.entireBlock {
+.header3 {
   padding: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,7 +453,7 @@
           flex-direction: column;
 }
 
-.h3photoGrid {
+.header3-photoGrid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,7 +464,7 @@
   margin: auto;
 }
 
-.photoGridText {
+.imageBlock-text {
   z-index: 1;
   position: absolute;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -469,12 +473,12 @@
   margin: 5%;
 }
 
-.h3column1 {
+.photoGrid-column1 {
   width: 100%;
   font-size: 3rem;
 }
 
-.h3column2 {
+.photoGrid-column2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,7 +489,7 @@
   width: 60%;
 }
 
-.h3images {
+.imageBlock-image {
   width: 100%;
   -webkit-filter: brightness(0.7);
           filter: brightness(0.7);
@@ -493,34 +497,30 @@
   transition: 0.3s;
 }
 
-.h3images:hover {
+.imageBlock-image:hover {
   -webkit-filter: brightness(1);
           filter: brightness(1);
 }
 
-.h3textBlock {
+.header3-textBlock {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: inline-block;
   color: #ffe600;
   width: 100%;
 }
 
-#h3Body {
+#textBlock-body {
   display: none;
 }
 
-#h3learnMore {
-  display: none;
-}
-
-#h3title {
+#textBlock-title {
   color: #ff004c;
   font-size: 4rem;
   margin-top: 1.5rem;
   text-align: right;
 }
 
-.learnMore {
+.textBlock-button-learnMore {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,23 +538,23 @@
   float: right;
 }
 
-.learnMore:hover {
+.textBlock-button-learnMore:hover {
   color: #ff004c;
   -webkit-transition: ease-in 0.1s;
   transition: ease-in 0.1s;
 }
 
-.learnMore:hover #learnMoreP2 {
+.textBlock-button-learnMore:hover #learnMore-P2 {
   display: inline;
 }
 
-#learnMoreP2 {
+#learnMore-P2 {
   margin-left: 1rem;
   display: none;
 }
 
 @media (min-width: 550px) {
-  .entireBlock {
+  .header3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -563,7 +563,7 @@
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .h3textBlock {
+  .header3-textBlock {
     display: inline-block;
     color: #ffe600;
     margin: auto;
@@ -571,13 +571,13 @@
     min-width: 17rem;
     max-width: 20rem;
   }
-  #h3title {
+  #textBlock-title {
     font-size: 3rem;
     text-align: right;
     vertical-align: center;
     margin-bottom: 1rem;
   }
-  #h3Body {
+  #textBlock-body {
     display: inline-block;
     text-align: right;
     font-size: 1.5rem;
@@ -588,14 +588,14 @@
 }
 
 @media (min-width: 700px) {
-  .h3textBlock {
+  .header3-textBlock {
     min-width: 30rem;
     max-width: 40rem;
   }
-  #h3title {
+  #textBlock-title {
     font-size: 4rem;
   }
-  #h3Body {
+  #textBlock-body {
     font-size: 1.7rem;
   }
   .h3photoGrid {
@@ -607,14 +607,14 @@
   .entireBlock {
     padding: 6%;
   }
-  .h3textBlock {
+  .header3-textBlock {
     min-width: 20rem;
     max-width: 30rem;
   }
-  #h3title {
+  #textBlock-title {
     font-size: 4.5rem;
   }
-  #h3Body {
+  #textBlock-body {
     font-size: 2rem;
   }
 }

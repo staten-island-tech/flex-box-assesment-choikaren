@@ -50,21 +50,20 @@
 // }
 
 @media (min-width: 700px) {
-  // .header {
-  //   margin-top: 3rem;
-  // }
+
 #header-image {
   width: 25rem;
 }
 }
 @media (min-width: 400px) {
   .header-text-title {
-    font-size: 3rem;
-    letter-spacing: 3rem;
+    font-size: 4rem;
+    letter-spacing: 4rem;
   }
-// .header {
-//   height: 40rem;
-// }
+
+  #header-text-subtitle {
+    font-size: 2rem;
+  }
 
 }
 @media (min-width: 1000px) {

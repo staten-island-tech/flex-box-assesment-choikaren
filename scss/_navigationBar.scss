@@ -94,7 +94,7 @@
   opacity: 1;
 }
 
-.popup1 {
+.button-popUp {
   top: 50%;
   left: 50%;
 }
@@ -123,7 +123,7 @@
   z-index: 2;
 }
 
-.overlay {
+.popUp-overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -133,14 +133,14 @@
   transition: opacity 0.1s;
   visibility: hidden;
   opacity: 0;
-  z-index: 2;
+  z-index: 3;
 }
-.overlay:target {
+.popUp-overlay:target {
   visibility: visible;
   opacity: 1;
 }
 
-.popup {
+.popUp-box {
   padding: 15px;
   position: absolute;
   top: 50%;
@@ -151,14 +151,15 @@
   position: relative;
   color: $mainBlue;
   font-family: $mainFont;
+  z-index: 3;
 }
 
-.popup h2 {
+.popUp-box h2 {
   margin-top: 0;
   background: $mainYellow;
   font-family: $mainFont;
 }
-.popup .close {
+.popUp-box .popUp-box-closeSymbol {
   position: absolute;
   top: 5px;
   right: 10px;
@@ -169,7 +170,7 @@
   color: #333;
 }
 
-.close:hover {
+.popUp-box-closeSymbol:hover {
   transform: scale(1.5);
 }
 
@@ -203,7 +204,7 @@
 }
 
 @media (min-width: 700px) {
-  .popup .close {
+  .popUp-box .popUp-box-closeSymbol {
     top: 15px;
     right: 20px;
   }

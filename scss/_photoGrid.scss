@@ -1,23 +1,23 @@
 @import "./_variables.scss";
 
-.header3 {
+#header3 {
   position: relative;
   background-color: $mainBlue;
 }
 
-.entireBlock {
+.header3 {
   padding: 10%;
   display: flex;
   flex-direction: column;
 }
 
-.h3photoGrid {
+.header3-photoGrid {
   display: flex;
   flex-direction: row;
   margin: auto;
 }
 
-.photoGridText {
+.imageBlock-text {
   z-index: 1;
   position: absolute;
   font-family: $mainFont;
@@ -26,43 +26,43 @@
   margin: 5%;
 }
 
-.h3column1 {
+.photoGrid-column1 {
   width: 100%;
   font-size: 3rem;
 }
 
-.h3column2 {
+.photoGrid-column2 {
   display: flex;
   flex-direction: column;
   width: 60%;
 }
 
-.h3images {
+.imageBlock-image {
   width: 100%;
   filter: brightness(0.7);
   transition: 0.3s;
 }
 
-.h3images:hover {
+.imageBlock-image:hover {
   filter: brightness(1);
 }
 
-.h3textBlock {
+.header3-textBlock {
   font-family: $mainFont;
   display: inline-block;
   color: $mainYellow;
   width: 100%;
 }
 
-#h3Body {
+#textBlock-body {
   display: none;
 }
 
-#h3learnMore {
-  display: none;
-}
+// #h3learnMore {
+//   display: none;
+// }
 
-#h3title {
+#textBlock-title {
   color: $mainPink;
   font-size: 4rem;
   margin-top: 1.5rem;
@@ -70,7 +70,7 @@
 }
 
 
-.learnMore {
+.textBlock-button-learnMore {
   display: flex;
   flex-direction: row;
   text-decoration: none;
@@ -83,16 +83,16 @@
   float: right;
 }
 
-.learnMore:hover {
+.textBlock-button-learnMore:hover {
 color: $mainPink;
 transition: ease-in 0.1s;
 }
 
-.learnMore:hover #learnMoreP2 {
+.textBlock-button-learnMore:hover #learnMore-P2 {
   display: inline;
 }
 
-#learnMoreP2 {
+#learnMore-P2 {
   margin-left: 1rem;
   display: none;
 }
@@ -105,13 +105,13 @@ transition: ease-in 0.1s;
 }
 
 @media (min-width:550px) {
-  .entireBlock {
+  .header3 {
     display: flex;
     flex-direction: row-reverse;
   }
   
 
-  .h3textBlock {
+  .header3-textBlock {
     display: inline-block;
     color: $mainYellow;
     margin: auto;
@@ -120,14 +120,14 @@ transition: ease-in 0.1s;
     max-width: 20rem;
   }
   
-  #h3title {
+  #textBlock-title {
     font-size: 3rem;
     text-align: right;
     vertical-align: center;
     margin-bottom: 1rem;
   }
 
-  #h3Body{
+  #textBlock-body{
     display: inline-block;
     text-align: right;
     font-size: 1.5rem;
@@ -140,16 +140,16 @@ transition: ease-in 0.1s;
 }
 
 @media (min-width: 700px) {
-  .h3textBlock {
+  .header3-textBlock {
     min-width: 30rem;
     max-width: 40rem;
   }
 
-#h3title {
+#textBlock-title {
   font-size: 4rem;
 }
 
-  #h3Body {
+  #textBlock-body {
     font-size: 1.7rem;
   }
 
@@ -164,16 +164,16 @@ transition: ease-in 0.1s;
     padding: 6%;
   }
   
-  .h3textBlock {
+  .header3-textBlock {
     min-width: 20rem;
     max-width: 30rem;
   }
 
-  #h3title {
+  #textBlock-title {
     font-size: 4.5rem;
   }
 
-  #h3Body {
+  #textBlock-body {
     font-size: 2rem;
   }
 
