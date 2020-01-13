@@ -1,5 +1,6 @@
 @import "./_variables.scss";
 
+
 .navigationBar-banner {
   visibility: hidden;
   position: absolute;
@@ -183,8 +184,12 @@
     visibility: visible;
     position: fixed;
     width: 100%;
-    overflow: hidden;
     z-index: 2;
+  }
+
+  .banner {
+    margin: 1rem;
+    overflow: hidden;
   }
 
   .navigationBar-menu {

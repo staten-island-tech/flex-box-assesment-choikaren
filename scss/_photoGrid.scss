@@ -81,6 +81,8 @@
   font-size: 2rem;
   margin-top: 1rem;
   float: right;
+  background: none;
+  border: none;
 }
 
 .textBlock-button-learnMore:hover {
@@ -88,8 +90,17 @@ color: $mainPink;
 transition: ease-in 0.1s;
 }
 
+
 .textBlock-button-learnMore:hover #learnMore-P2 {
-  display: inline;
+  display: inline-block;
+}
+
+#textBlock-notVisibleBody {
+  display: none;
+}
+
+.textBlock-button:target #textBlock-notVisibleBody {
+display: inline-block;
 }
 
 #learnMore-P2 {
